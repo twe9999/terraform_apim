@@ -1,0 +1,19 @@
+{
+  "name": "@dxp/dxp-remote-proxy",
+  "version": "",
+  "scripts": {
+    "login": "az login",
+    "start": "func start",
+    "publish": "func azure functionapp publish func-ixt-dxp-demo-ixtwkenneth --build local --javascript"
+  },
+  "description": "",
+  "devDependencies": {
+    "@azure/functions": "^3.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "azure-function-log-intercept": "^1.1.0",
+    "jsonpath": "^1.1.1",
+    "xml-js": "^1.6.11"
+  }
+}
