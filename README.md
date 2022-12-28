@@ -16,9 +16,10 @@
 
 ---
 ## 範例專案建立
-會透過Terraform部署Azure環境，並部署一個簡單的APIM與Azure Function應用程式進行驗證
+透過Terraform部署Azure環境，並部署一個簡單的APIM與Azure Function應用程式進行驗證
 
-<font color=red>由於名稱不能重覆，請先修改variables.tf內的 「env」 變數</font>
+<font color=red>也由於名稱不能重覆，所以可以參照下圖VSCode的方式找出所有ixtwkenneth，做一次性取代</font>
+![](doc/2022-12-28-09-50-46.png)
 
 - :one: 部署Azure環境
 
