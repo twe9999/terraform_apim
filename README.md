@@ -44,6 +44,7 @@
   ```
 
 - :three: 驗證Azure Function
+
   ``` sh
   echo "沒過APIM直接測API"
   curl https://func-ixt-dxp-demo-ixtwkenneth.azurewebsites.net/api/checkip
@@ -57,7 +58,11 @@
   ```
 
 
+
 - :four: 移除已部署的Azure環境
+  - 如果上述指含都正常，非常恭喜，你已完成本次Lab了，可以把環境留下來做各種測試，又或者透過以下指令刪除，
+  
+  - **注意**：APIM刪除後它會偷偷在背地裡留三天才會真的刪除，如果用同樣的名稱重建，就會收到名稱重覆或服務已存在的錯誤訊息。
   ``` sh
   terraform destroy
   ```
