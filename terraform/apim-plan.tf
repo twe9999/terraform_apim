@@ -5,7 +5,7 @@ resource "azurerm_api_management" "apim_mgt" {
   publisher_name      = "ixtw"
   publisher_email     = "ixtw@admin"
   #
-  sku_name = "Consumption_0"
+  sku_name = "Developer_1"
 
   tags = {
     group        = var.group,

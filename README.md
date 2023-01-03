@@ -18,7 +18,7 @@
 ## 範例專案建立
 透過Terraform部署Azure環境，並部署一個簡單的APIM與Azure Function應用程式進行驗證
 
-<font color=red>也由於名稱不能重覆，所以可以參照下圖VSCode的方式找出所有ixtwkenneth，做一次性取代</font>
+<font color=red>也由於名稱不能重覆，所以可以參照下圖VSCode的方式找出所有ixtwsam，做一次性取代</font>
 ![](doc/2022-12-28-09-50-46.png)
 
 - :one: 部署Azure環境
@@ -47,13 +47,13 @@
 
   ``` sh
   echo "沒過APIM直接測API"
-  curl https://func-ixt-dxp-demo-ixtwkenneth.azurewebsites.net/api/checkip
+  curl https://func-ixt-dxp-demo-ixtwsam.azurewebsites.net/api/checkip
        
   echo "有過APIM直接測API"
-  curl https://apim-ixt-ixtwkenneth.azure-api.net/demosvc/checkip
+  curl https://apim-ixt-ixtwsam.azure-api.net/demosvc/checkip
       
   echo "有過APIM直接測API (APIM直接回模擬資料)"
-  curl -H "Content-Type: application/json" https://apim-ixt-ixtwkenneth.azure-api.net/demomock/mock
+  curl -H "Content-Type: application/json" https://apim-ixt-ixtwsam.azure-api.net/demomock/mock
 
   ```
 

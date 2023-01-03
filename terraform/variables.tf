@@ -35,5 +35,5 @@ variable "node_env" {
 }
 variable "env" {
   type    = string
-  default = "ixtwkenneth"
+  default = "ixtwsam"
 }

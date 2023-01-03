@@ -4,7 +4,7 @@
   "scripts": {
     "login": "az login",
     "start": "func start",
-    "publish": "func azure functionapp publish func-ixt-dxp-demo-ixtwkenneth --build local --javascript"
+    "publish": "func azure functionapp publish func-ixt-dxp-demo-ixtwsam --build local --javascript"
   },
   "description": "",
   "devDependencies": {

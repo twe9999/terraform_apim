@@ -59,3 +59,38 @@ resource "azurerm_api_management_api_operation" "checkip" {
     }
   }
 }
+
+
+resource "azurerm_api_management_api_operation_policy" "checkip" {
+  api_name            = azurerm_api_management_api_operation.checkip.api_name
+  api_management_name = azurerm_api_management_api_operation.checkip.api_management_name
+  resource_group_name = azurerm_api_management_api_operation.checkip.resource_group_name
+  operation_id        = azurerm_api_management_api_operation.checkip.operation_id
+
+  xml_content = <<XML
+<policies>
+    <inbound>
+        <base />
+      
+    </inbound>
+    <backend>
+        <base />
+    </backend>
+    <outbound>
+        <base />
+    </outbound>
+    <on-error>
+        <base />
+    </on-error>
+</policies>
+XML
+
+}
+
+resource "azurerm_api_management_identity_provider_google" "checkip" {
+  resource_group_name = azurerm_api_management_api_operation.checkip.resource_group_name
+  api_management_name = azurerm_api_management_api_operation.checkip.api_management_name
+  client_id           = "27425271650-qdmgb906h9t7bo685pcepkfmbsfbefgu.apps.googleusercontent.com"
+  client_secret       = "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"
+}
+

@@ -11,7 +11,7 @@ const fs2 = require('fs').promises;
  */
 const fetchData = async (funcPath, reqHeader, reqBody) => {
   const { data } = await axios.get('https://ifconfig.me');
-  rsData = 'IP: ' + data;
+  rsData = 'IP: ' + data + 'test';
 
   return {
     body: rsData,
